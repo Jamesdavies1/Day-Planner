@@ -1,0 +1,24 @@
+#header{
+    border-style: solid;
+    border-color: black;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+#title{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+
+#description{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 20px;
+}
+
+#currentdate{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 30px;

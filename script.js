@@ -1,7 +1,7 @@
 //---------------------------------------------DAY PLANNER-----------------------------------------------------
 
 
-//------------------------------------------------PSEUDO---------------------------------------------------------
+//------------------------------------------------PSEUDO-------------------------------------------------------
 
 
 //Create a simple calendar application that allows the user to save events for each hour of the day. 
@@ -22,9 +22,8 @@
     //Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
 
 
+//-------------------------------------Minimum-Requirements----------------------------------------------------
 
-
-//------------------------------------Minimum Requirements-----------------------------------------------------------
 
 //Functional, deployed application.
 
@@ -40,3 +39,31 @@
 
 //Each timeblock is color coded to indicate whether it is in a past, present, or future hour.
 
+
+//---------------------------------------sections required----------------------------------------------------
+
+
+//html header featuring breif title / page description √
+    //including current date
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0');
+    var yyyy = today.getFullYear();
+    
+    today =  dd + '/' + mm + '/' + yyyy;
+
+    document.getElementById('currentdate').innerHTML += today;
+
+    console.log(today);
+//add a grid system with    
+    //9-5hr planner. 1hr per row. = 8 rows x 3 cols
+    //3 cols. left=hour(am/pm), mid=user input, right= save user input function/button.
+    
+//add a feature that knows current time.
+    //greys out already passed hour rows
+    //red row highlights current time
+    //green rows highlight future times
+
+//right cols have save buttons that save user inputs on selected rows
+
+//add feature that saves browser state so when re-visited, web page displays previously inputted notes.
