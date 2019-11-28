@@ -1,0 +1,23 @@
+{
+  "name": "homework---day-planner",
+  "version": "1.0.0",
+  "description": "This is a tool for allowing people to plan their day!",
+  "main": "script.js",
+  "dependencies": {
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jamesdavies1/homework---day-planner.git"
+  },
+  "author": "James",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jamesdavies1/homework---day-planner/issues"
+  },
+  "homepage": "https://github.com/Jamesdavies1/homework---day-planner#readme"
+}

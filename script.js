@@ -44,21 +44,48 @@
 
 
 //html header featuring breif title / page description √
-    //including current date
-    var today = new Date();
-    var dd = String(today.getDate()).padStart(2, '0');
-    var mm = String(today.getMonth() + 1).padStart(2, '0');
-    var yyyy = today.getFullYear();
+    //including current dat
+
+
+    var today = moment();
+    var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    console.log("This is what the moment .day prints out", console.log(today.day())
+    var currentDay = daysOfWeek[today.day()];
+    // var today = new Date();
+    // var dd = String(today.getDate()).padStart(2, '0');
+    // var mm = String(today.getMonth() + 1).padStart(2, '0');
+    // var yyyy = today.getFullYear();
     
-    today =  dd + '/' + mm + '/' + yyyy;
+    // today =  dd + '/' + mm + '/' + yyyy;
 
-    document.getElementById('currentdate').innerHTML += today;
+    document.getElementById('currentdate').innerHTML += currentDay;
 
-    console.log(today);
+    // console.log(today);
 //add a grid system with    
     //9-5hr planner. 1hr per row. = 8 rows x 3 cols
     //3 cols. left=hour(am/pm), mid=user input, right= save user input function/button.
     
+// append row to the HTML table
+function appendRow() {
+        var tbl = document.getElementById('my-table'), // table reference
+            row = tbl.insertRow(tbl.rows.length),      // append table row
+            i;
+        // insert table cells to the new row
+        for (i = 0; i < tbl.rows[0].cells.length; i++) {
+            createCell(row.insertCell(i), i, 'row');
+        }
+    }
+     
+    // create DIV element and append to the table cell
+    function createCell(cell, text, style) {
+        var div = document.createElement('div'), // create DIV element
+            txt = document.createTextNode(text); // create text node
+        div.appendChild(txt);                    // append text node to the DIV
+        div.setAttribute('class', style);        // set DIV class attribute
+        div.setAttribute('className', style);    // set DIV class attribute for IE (?!)
+        cell.appendChild(div);                   // append DIV to the table cell
+    }
+
 //add a feature that knows current time.
     //greys out already passed hour rows
     //red row highlights current time
