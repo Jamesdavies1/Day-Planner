@@ -1,6 +1,11 @@
+html{
+    background-image: url("images/grey_wash_wall/grey_wash_wall.png");
+}
+
 #header{
+    color: wheat;
     border-style: solid;
-    border-color: black;
+    border-color: wheat;
     border-left: none;
     border-right: none;
     border-top: none;
@@ -10,6 +15,7 @@
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: underline;
+    font-size: 40px;
 }
 
 #description{
@@ -21,4 +27,34 @@
 #currentdate{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-font-size: 30px;
+    font-size: 30px;
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: wheat;
+    text-align: center;
+    border-style: solid;
+    border-color: wheat;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;  
+}
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  .wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+  }
+
+  .footer,
+  .push {
+    height: 50px;
+  }
