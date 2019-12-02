@@ -2,41 +2,44 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
 </head>
 
 <body>
-<div id="header">
+
+  <div id="header">
     <h1 id="title"><strong>WORK DAY SCHEDULER</strong></h1>
-    <p id="description"><strong>A simple calendar app that allows you to plan your working day more efficiently</strong> </p>
+    <p id="description"><strong>A simple calendar app that allows you to plan your working day more efficiently</strong>
+    </p>
     <p id="currentdate"></p>
-</div>
-
-<div class="container">
-  <div id="9" class="row time-block">
-    <div class="col-md-1 hour">
-      9am
-    </div>
-    <textarea class="col-md-10 description"></textarea>
-    <button class="btn saveBtn col-md-1">save</button>
   </div>
 
-  <div id="10" class="row time-block">
-    <div class="col-md-1 hour">
-      10am
+  <div class="container">
+    <div id="9" class="row time-block">
+      <div class="col-md-1 hour">
+        9am
+      </div>
+      <textarea class="col-md-10 description"></textarea>
+      <button class="btn saveBtn col-md-1">save</button>
     </div>
-    <textarea class="col-md-10 description"></textarea>
-    <button class="btn saveBtn col-md-1">save</button>
-  </div>
 
-  <div id="11" class="row time-block">
+    <div id="10" class="row time-block">
+      <div class="col-md-1 hour">
+        10am
+      </div>
+      <textarea class="col-md-10 description"></textarea>
+      <button class="btn saveBtn col-md-1">save</button>
+    </div>
+
+    <div id="11" class="row time-block">
       <div class="col-md-1 hour">
         11am
       </div>
@@ -45,62 +48,61 @@
     </div>
 
     <div id="12" class="row time-block">
-        <div class="col-md-1 hour">
-          12pm
-        </div>
-        <textarea class="col-md-10 description"></textarea>
-        <button class="btn saveBtn col-md-1">save</button>
+      <div class="col-md-1 hour">
+        12pm
       </div>
+      <textarea class="col-md-10 description"></textarea>
+      <button class="btn saveBtn col-md-1">save</button>
+    </div>
 
-      <div id="13" class="row time-block">
-          <div class="col-md-1 hour">
-            1pm
-          </div>
-          <textarea class="col-md-10 description"></textarea>
-          <button class="btn saveBtn col-md-1">save</button>
-        </div>
+    <div id="13" class="row time-block">
+      <div class="col-md-1 hour">
+        1pm
+      </div>
+      <textarea class="col-md-10 description"></textarea>
+      <button class="btn saveBtn col-md-1">save</button>
+    </div>
 
-        <div id="14" class="row time-block">
-            <div class="col-md-1 hour">
-              2pm
-            </div>
-            <textarea class="col-md-10 description"></textarea>
-            <button class="btn saveBtn col-md-1">save</button>
-          </div>
+    <div id="14" class="row time-block">
+      <div class="col-md-1 hour">
+        2pm
+      </div>
+      <textarea class="col-md-10 description"></textarea>
+      <button class="btn saveBtn col-md-1">save</button>
+    </div>
 
-          <div id="15" class="row time-block">
-              <div class="col-md-1 hour">
-                3pm
-              </div>
-              <textarea class="col-md-10 description"></textarea>
-              <button class="btn saveBtn col-md-1">save</button>
-            </div>
+    <div id="15" class="row time-block">
+      <div class="col-md-1 hour">
+        3pm
+      </div>
+      <textarea class="col-md-10 description"></textarea>
+      <button class="btn saveBtn col-md-1">save</button>
+    </div>
 
-            <div id="16" class="row time-block">
-                <div class="col-md-1 hour">
-                  4pm
-                </div>
-                <textarea class="col-md-10 description"></textarea>
-                <button class="btn saveBtn col-md-1">save</button>
-              </div>
+    <div id="16" class="row time-block">
+      <div class="col-md-1 hour">
+        4pm
+      </div>
+      <textarea class="col-md-10 description"></textarea>
+      <button class="btn saveBtn col-md-1">save</button>
+    </div>
 
-              <div id="17" class="row time-block">
-                  <div class="col-md-1 hour">
-                    5pm
-                  </div>
-                  <textarea class="col-md-10 description"></textarea>
-                  <button class="btn saveBtn col-md-1">save</button>
-                </div>
+    <div id="17" class="row time-block">
+      <div class="col-md-1 hour">
+        5pm
+      </div>
+      <textarea class="col-md-10 description"></textarea>
+      <button class="btn saveBtn col-md-1">save</button>
+    </div>
 
+  </div>
+  <!--<table id="planner"></table>-->
 
-</div>
-<!--<table id="planner"></table>-->
-
-<footer class="footer"> 
+  <footer class="footer">
     <p>copyright&#169;</p>
-</footer>
+  </footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 

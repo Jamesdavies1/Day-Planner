@@ -21,25 +21,6 @@
 //You'll need to use the Moment.js library to work with date and time. 
     //Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
 
-
-//-------------------------------------Minimum-Requirements----------------------------------------------------
-
-
-//Functional, deployed application.
-
-//GitHub repository with a unique name and a README describing project.
-
-//The application displays timeblocks for standard business hours (9 a.m. to 5 p.m.).
-
-//Each timeblock contains an input field and save button.
-
-//Clicking a timeblock's "Save" button stores the input text in local storage, allowing the text to persist when the application is refreshed.
-
-//The current day is displayed at the top of the calendar.
-
-//Each timeblock is color coded to indicate whether it is in a past, present, or future hour.
-
-
 //---------------------------------------sections required----------------------------------------------------
 
 
@@ -47,21 +28,21 @@
     //including current dat
 
 //moment method 
-    var today = moment();
-    var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-    console.log("This is what the moment .day prints out", console.log(today.day()))
-    var currentDay = daysOfWeek[today.day()];
+/*var today = moment();
+var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+console.log("This is what the moment .day prints out", console.log(today.day()))
+var currentDay = daysOfWeek[today.day()];*/
     
-    document.getElementById('currentdate').innerHTML += currentDay;
+    //document.getElementById('currentdate').innerHTML += currentDay;
 //regular method
-    // var today = new Date();
-    // var dd = String(today.getDate()).padStart(2, '0');
-    // var mm = String(today.getMonth() + 1).padStart(2, '0');
-    // var yyyy = today.getFullYear();
-        // today =  dd + '/' + mm + '/' + yyyy;
+     //var today = new Date();
+     //var dd = String(today.getDate()).padStart(2, '0');
+     //var mm = String(today.getMonth() + 1).padStart(2, '0');
+     //var yyyy = today.getFullYear();
+         //today =  dd + '/' + mm + '/' + yyyy;
 
 
-    // console.log(today);
+     //console.log(today);
 //add a grid system with    
     //9-5hr planner. 1hr per row. = 8 rows x 3 cols
     //3 cols. left=hour(am/pm), mid=user input, right= save user input function/button.
@@ -71,11 +52,11 @@
         // insert table cells to the new row    
     // create DIV element and append to the table cell
     
-    var timeArray = [9, 10, 11, 12, 13, 14, 15, 16, 17];
-    for (i = 0; i < timeArray.length; i++);{}
+    //var timeArray = [9, 10, 11, 12, 13, 14, 15, 16, 17];
+    //for (i = 0; i < timeArray.length; i++);{}
 
     // Find a <table> element with id="myTable":
-    var table = document.getElementById("planner");
+    //var table = document.getElementById("planner");
 
     // Create an empty <tr> element and add it to the 1st position of the table:
     //var row = table.insertRow(0);
@@ -119,3 +100,50 @@
 //right cols have save buttons that save user inputs on selected rows
 
 //add feature that saves browser state so when re-visited web page displays previously inputted notes
+var today = moment();
+
+var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+console.log("This is what the moment .day prints out", console.log(today.day()))
+var currentDay = daysOfWeek[today.day()];
+document.getElementById('currentdate').innerHTML += currentDay;
+
+$(document).ready(function(){
+$(".saveBtn").on("click", function(){
+    var value = $(this).siblings(".description").val();
+    var time = $(this).parent().attr("id");
+    localStorage.setItem(time, value);
+})
+});
+
+function hourUpdater() {
+    // get current number of hours
+    var currentHour = moment().hours();
+    // loop over time blocks
+    $(".time-block").each(function() {
+      var blockHour = parseInt($(this).attr("id"));
+      // check if we've moved past this time
+      if (blockHour < currentHour) {
+        $(this).addClass("past");
+      } 
+      else if (blockHour === currentHour) {
+        $(this).removeClass("past");
+        $(this).addClass("present");
+      } 
+      else {
+        $(this).removeClass("past");
+        $(this).removeClass("present");
+        $(this).addClass("future");
+      }
+    });
+  }
+hourUpdater();
+
+$("#9 .description").val(localStorage.getItem("9"));
+$("#10 .description").val(localStorage.getItem("10"));
+$("#11 .description").val(localStorage.getItem("11"));
+$("#12 .description").val(localStorage.getItem("12"));
+$("#13 .description").val(localStorage.getItem("13"));
+$("#14 .description").val(localStorage.getItem("14"));
+$("#15 .description").val(localStorage.getItem("15"));
+$("#16 .description").val(localStorage.getItem("16"));
+$("#17 .description").val(localStorage.getItem("17"));
