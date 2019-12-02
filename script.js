@@ -46,45 +46,70 @@
 //html header featuring breif title / page description √
     //including current dat
 
-
+//moment method 
     var today = moment();
     var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-    console.log("This is what the moment .day prints out", console.log(today.day())
+    console.log("This is what the moment .day prints out", console.log(today.day()))
     var currentDay = daysOfWeek[today.day()];
+    
+    document.getElementById('currentdate').innerHTML += currentDay;
+//regular method
     // var today = new Date();
     // var dd = String(today.getDate()).padStart(2, '0');
     // var mm = String(today.getMonth() + 1).padStart(2, '0');
     // var yyyy = today.getFullYear();
-    
-    // today =  dd + '/' + mm + '/' + yyyy;
+        // today =  dd + '/' + mm + '/' + yyyy;
 
-    document.getElementById('currentdate').innerHTML += currentDay;
 
     // console.log(today);
 //add a grid system with    
     //9-5hr planner. 1hr per row. = 8 rows x 3 cols
     //3 cols. left=hour(am/pm), mid=user input, right= save user input function/button.
+    // append row to the HTML table
+    // append table row
     
-// append row to the HTML table
-function appendRow() {
-        var tbl = document.getElementById('my-table'), // table reference
-            row = tbl.insertRow(tbl.rows.length),      // append table row
-            i;
-        // insert table cells to the new row
-        for (i = 0; i < tbl.rows[0].cells.length; i++) {
-            createCell(row.insertCell(i), i, 'row');
-        }
-    }
-     
+        // insert table cells to the new row    
     // create DIV element and append to the table cell
-    function createCell(cell, text, style) {
-        var div = document.createElement('div'), // create DIV element
-            txt = document.createTextNode(text); // create text node
-        div.appendChild(txt);                    // append text node to the DIV
-        div.setAttribute('class', style);        // set DIV class attribute
-        div.setAttribute('className', style);    // set DIV class attribute for IE (?!)
-        cell.appendChild(div);                   // append DIV to the table cell
-    }
+    
+    var timeArray = [9, 10, 11, 12, 13, 14, 15, 16, 17];
+    for (i = 0; i < timeArray.length; i++);{}
+
+    // Find a <table> element with id="myTable":
+    var table = document.getElementById("planner");
+
+    // Create an empty <tr> element and add it to the 1st position of the table:
+    //var row = table.insertRow(0);
+
+    // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+    //var cell1 = row.insertCell(0);
+    //var cell2 = row.insertCell(1);
+    //var cell3 = row.insertCell(2);
+    
+    // Add some text to the new cells:
+    //cell1.innerHTML = "TIME ";
+    //cell2.innerHTML = "INPUT ";
+    //cell3.innerHTML = "SAVE ";
+
+        // Create an empty <tr> element and add it to the 1st position of the table:
+       // var row1 = table.insertRow(0);
+
+        // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+      //  var cell1 = row1.insertCell(0);
+      //  var cell2 = row1.insertCell(1);
+      //  var cell3 = row1.insertCell(2);
+        
+        // Add some text to the new cells:
+      //  cell1.innerHTML = "TIME ";
+      //  cell2.innerHTML = "INPUT ";
+      //  cell3.innerHTML = "SAVE ";
+
+  
+    // create DIV element
+    // append text node to the DIV
+    // set DIV class attribute
+    // set DIV class attribute for IE (?!)
+    // append DIV to the table cell
+        
 
 //add a feature that knows current time.
     //greys out already passed hour rows
@@ -93,4 +118,4 @@ function appendRow() {
 
 //right cols have save buttons that save user inputs on selected rows
 
-//add feature that saves browser state so when re-visited, web page displays previously inputted notes.
+//add feature that saves browser state so when re-visited web page displays previously inputted notes
