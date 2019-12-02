@@ -4,6 +4,7 @@ body{
 
 #header{
     color: wheat;
+    margin-top: 20px;
     border-style: solid;
     border-color: wheat;
     border-left: none;
@@ -33,6 +34,47 @@ body{
 #planner{
   border-style: solid;
   color: black;
+}
+
+
+.container{
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.hour{
+  background-color: rgb(104, 37, 37) ;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  color: wheat;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.saveBtn{
+  background-color: rgb(31, 94, 31);
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  color: wheat;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.description{
+  background-color: rgb(77, 77, 77);
+  text-align: center;
+  padding-top: 15px;
+  font-size: 20px;
+  border-style: double;
+  border-color: black;
+  color: wheat;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .footer{
