@@ -22,8 +22,10 @@ function hourUpdater() {
     // get current number of hours
     var currentHour = moment().hours();
     // loop over time blocks
-    $(".time-block").each(function () {
-        var blockHour = parseInt($(this).attr("id"));
+    $(".hour").each(function () {
+        var blockHour = parseInt($(this).attr("data-hour"));
+        console.log('I am the block hour: ', blockHour);
+        console.log('I am the current hour: ', currentHour)
         // check if we've moved past this time
         if (blockHour < currentHour) {
             $(this).addClass("past");
