@@ -1,45 +1,45 @@
 body{
-    background-image: url("images/grey_wash_wall/grey_wash_wall.png");
+  background-image: url("images/grey_wash_wall/grey_wash_wall.png");
 }
 
 #header{
-    color: wheat;
-    margin-top: 20px;
-    border-style: solid;
-    border-color: wheat;
-    border-left: none;
-    border-right: none;
-    border-top: none;
+  color: wheat;
+  margin-top: 20px;
+  border-style: solid;
+  border-color: wheat;
+  border-left: none;
+  border-right: none;
+  border-top: none;
 }
 
 #title{
-    text-align: center;
-    font-family: 'Abel', sans-serif;
-    font-size: 60px;
-    border-style: solid;
-    margin-left: 30%;
-    margin-right: 30%;
+  text-align: center;
+  font-family: 'Abel', sans-serif;
+  font-size: 60px;
+  border-style: solid;
+  margin-left: 30%;
+  margin-right: 30%;
 
 }
 
 #description{
-    text-align: center;
-    font-family: 'Courgette', cursive;
-    padding-top: 20px;
-    font-size: 32px;
+  text-align: center;
+  font-family: 'Courgette', cursive;
+  padding-top: 20px;
+  font-size: 32px;
 }
 
 #currentdate{
-    text-align: center;
-    font-family: 'Abel', sans-serif;
-    font-size: 40px;
-    color:  rgb(104, 37, 37) ;
-    border-style: solid;
-    border-color: wheat;
-    border-bottom: 0;
-    margin-left: 40%;
-    margin-right: 40%;
-    margin-bottom: -3px;
+  text-align: center;
+  font-family: 'Abel', sans-serif;
+  font-size: 40px;
+  color:  rgb(104, 37, 37) ;
+  border-style: solid;
+  border-color: wheat;
+  border-bottom: 0;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-bottom: -3px;
 
 }
 
@@ -100,43 +100,42 @@ body{
 
 .footer{
   padding-top: 10px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: wheat;
-    text-align: center;
-    border-style: solid;
-    border-color: wheat;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;  
-    background-image: url("images/grey_wash_wall/grey_wash_wall.png");
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: wheat;
+  text-align: center;
+  border-style: solid;
+  border-color: wheat;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;  
+  background-image: url("images/grey_wash_wall/grey_wash_wall.png");
 }
 
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
+html, body {
+  height: 100%;
+  margin: 0;
+}
 
-  .wrapper {
-    min-height: 100%;
-    margin-bottom: -50px;
-  }
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+}
 
-  .footer,
-  .push {
-    height: 50px;
-  }
+.footer,
+.push {
+  height: 50px;
+}
 
-  .past{
-    background-color: orange;
-  }
+.past{
+  background-color: rgb(104, 37, 37) ;  }
 
-  .present{
-    background-color: blue;
-  }
+.present{
+  background-color: rgb(31, 94, 31);
+}
 
-  .future{
-    background-color: khaki;
-  }
+.future{
+  background-color: rgb(48, 45, 47);
+}

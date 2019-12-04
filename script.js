@@ -42,6 +42,7 @@ function hourUpdater() {
     });
 }
 hourUpdater();
+
 //local storage saving for all user inputs
 $("#9 .description").val(localStorage.getItem("9"));
 $("#10 .description").val(localStorage.getItem("10"));
@@ -53,12 +54,3 @@ $("#15 .description").val(localStorage.getItem("15"));
 $("#16 .description").val(localStorage.getItem("16"));
 $("#17 .description").val(localStorage.getItem("17"));
 
-
-
-
-//THESE THINGS ARE STILL MISSING FROM PAGE
-
-//-text inputs need to be in ul/li bullet points
-//-text box needs to expand in size when input field becomes too small for text
-//-colour changing times to show what is past/present and future
-//
