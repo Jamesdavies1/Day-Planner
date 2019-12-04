@@ -1,5 +1,5 @@
 body{
-  background-image: url("images/grey_wash_wall/grey_wash_wall.png");
+  background-image: url("../images/grey_wash_wall/grey_wash_wall.png");
 }
 
 #header{
@@ -85,7 +85,7 @@ body{
 }
 
 .description{
-  background-image: url("images/crossed_stripes/crossed_stripes.png");
+  background-image: url("../images/crossed_stripes/crossed_stripes.png");
   text-align: center;
   padding-top: 15px;
   font-size: 20px;
@@ -111,7 +111,7 @@ body{
   border-left: none;
   border-right: none;
   border-bottom: none;  
-  background-image: url("images/grey_wash_wall/grey_wash_wall.png");
+  background-image: url("../images/grey_wash_wall/grey_wash_wall.png");
 }
 
 html, body {
