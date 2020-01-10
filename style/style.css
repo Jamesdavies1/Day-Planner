@@ -100,7 +100,6 @@ body{
 }
 
 .footer{
-  padding-top: 10px;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -113,6 +112,10 @@ body{
   border-right: none;
   border-bottom: none;  
   background-image: url("../images/grey_wash_wall/grey_wash_wall.png");
+}
+
+.copyright{
+  margin: 0;
 }
 
 html, body {
